@@ -32,23 +32,23 @@
                     {{--Sender Information--}}
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Business Name</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="sename"class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Email Address</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="seemail" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Phone Number</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="sephone" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Address</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="seaddress" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Logo</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="file">
+                        <input name="selogo" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="file">
                     </div>
                     <hr>
 
@@ -57,19 +57,19 @@
                     <hr>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Name</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="rename" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Email Address</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="reemail" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Phone Number</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="title" type="text">
+                        <input name="rephone" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="title">Address</label>
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="readdress" name="readdress" type="text">
+                        <input name="readdress" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
                     </div>
 
                     <hr>
@@ -77,14 +77,17 @@
                     <hr>
                     <div class="mb-4">
                         <label class="block font-medium mb-2" for="due_date">Payment Method</label>
-                        <select name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="payment_method">
-                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Cash" id="cash">Cash</option>
-                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Mobile Money" id="momo">Mobile Money</option>
-                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Bank" id="momo">Bank</option>
+                        <select name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
+                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Cash">Cash</option>
+                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Mobile Money">Mobile Money</option>
+                            <option name="payment_method" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" value="Bank">Bank</option>
                         </select>
                     </div>
+
+                    {{--Items Purchase--}}
+
                     <div class="mb-4">
-                        <center><button class="bg-purple-500 hover:bg-purple-600 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="text">Create Task</button></center>
+                        <center><button name="save" class="bg-purple-500 hover:bg-purple-600 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="text">Save Invoice</button></center>
                     </div>
                 </form>
                 {{--Invoice Form End--}}
