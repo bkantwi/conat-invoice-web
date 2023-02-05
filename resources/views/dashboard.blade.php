@@ -11,7 +11,7 @@
 {{--                <x-jet-welcome />--}}
 
                 {{--Invoice Form Start--}}
-                <form class="bg-white p-6 rounded-lg shadow-md">
+                <form class="bg-white p-6 rounded-lg shadow-md" action="#">
                     <center>
                     <h1 class="text-lg font-medium mb-4 ">Create an invoice</h1>
                     <h3 class="text-lg font-medium mb-2">Sender Information</h3>
@@ -85,6 +85,21 @@
                     </div>
 
                     {{--Items Purchase--}}
+                    <div class="repeated-fields">
+                        <div class="form-group">
+                            <label for="item">Item</label>
+                            <input type="text" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="item" name="item[]">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="text" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="amount" name="amount[]">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="text" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="price" name="price[]">
+                        </div>
+                    </div><br >
+
 
                     <div class="mb-4">
                         <center><button name="save" class="bg-purple-500 hover:bg-purple-600 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="text">Save Invoice</button></center>

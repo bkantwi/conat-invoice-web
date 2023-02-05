@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('rephone', 20)->nullable();
             $table->string('readdress', 100)->nullable();
             $table->string('payment_method', 15)->nullable();
-            $table->string('item_name', 200)->nullable();
+            $table->string('item', 200)->nullable();
             $table->string('amount', 5)->nullable();
             $table->string('cost', 20);
             $table->timestamps();

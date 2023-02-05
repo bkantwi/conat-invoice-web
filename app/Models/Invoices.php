@@ -20,7 +20,7 @@ class Invoices extends Model
         'rephone',
         'readdress',
         'payment_method',
-        'item_name',
+        'item',
         'amount',
         'cost',
     ];
