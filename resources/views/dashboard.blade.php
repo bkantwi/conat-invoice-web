@@ -108,25 +108,26 @@
                     </div><br >
 
                     {{--Items Purchase--}}
-                    {{--Receiver Information--}}
-{{--                    <hr>--}}
-{{--                    <center><h1 class="text-lg font-medium mb-2">Item Details</h1></center>--}}
-{{--                    <hr>--}}
-{{--                    <div class="mb-4">--}}
-{{--                        <label class="block font-medium mb-2" for="title">Item</label>--}}
-{{--                        <input name="item" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">--}}
-{{--                        <span style="color:red">@error('item'){{ $message }} @enderror</span>--}}
-{{--                    </div>--}}
-{{--                    <div class="mb-4">--}}
-{{--                        <label class="block font-medium mb-2" for="title">Amount</label>--}}
-{{--                        <input name="amount" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">--}}
-{{--                        <span style="color:red">@error('amount'){{ $message }} @enderror</span>--}}
-{{--                    </div>--}}
-{{--                    <div class="mb-4">--}}
-{{--                        <label class="block font-medium mb-2" for="title">Cost</label>--}}
-{{--                        <input name="cost" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">--}}
-{{--                        <span style="color:red">@error('cost'){{ $message }} @enderror</span>--}}
-{{--                    </div>--}}
+{{--                    Receiver Information--}}
+                    <hr>
+                    <center><h1 class="text-lg font-medium mb-2">Item Details</h1></center>
+                    <hr>
+                    <div id="container">
+                        <div class="form-group">
+                            <label for="item">Item</label>
+                            <input type="text" name="item[]" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="text" name="amount[]" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="text" name="price[]" class="form-control">
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                    <button id="new-field">Add</button><br ><hr>
 
                     <div class="mb-4">
                         <center><button name="save" class="bg-purple-500 hover:bg-purple-600 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Save Invoice</button></center>
@@ -138,3 +139,36 @@
         </div>
     </div>
 </x-app-layout>
+
+<script>
+    const container = document.getElementById("container");
+    const addBtn = document.getElementById("new-field");
+
+    addBtn.addEventListener("click", function() {
+        const newFields = `
+      <div class="form-group">
+        <label for="item">Item</label>
+        <input type="text" name="item[]" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="text" name="amount[]" class="form-control"></div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" name="price[]" class="form-control">
+      </div>
+      <button class="remove-btn">Remove</button>
+    `;
+        container.insertAdjacentHTML("beforeend", newFields);
+    });
+    container.addEventListener("click", function(event) {
+        if (event.target.classList.contains("remove-btn")) {
+            event.target.parentElement.remove();
+        }
+    });
+</script>
+
+
+
+
+

@@ -64,7 +64,12 @@ class InvoiceController extends Controller
         $invoice->rename = $request->input('rename');
         $invoice->remail = $request->input('remail');
         $invoice->rephone = $request->input('rephone');
+        $invoice->item = $request->input('item');
+        $invoice->amount = $request->input('amount');
+        $invoice->cost = $request->input('cost');
         $invoice->payment_method = $request->input('payment_method');
+
+
         if($request->hasfile('selogo')){
             $file = $request->file('selogo');
             // $extension = $file->getClientOriginalExtension();
